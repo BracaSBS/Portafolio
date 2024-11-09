@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Asegúrate de incluir Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <h1 class="logo">Mi Portafolio</h1>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <!-- Sección de inicio -->
+    <section id="inicio" class="section inicio">
+        <h2>Bienvenido a mi Portafolio, Me llamo Santiago Bracamonte Suarez.</h2>
+        <p>Conoce mis proyectos, experiencia en desarrollo web, reparaciones de Software en dispositivos electrónicos,etc.</p>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="section sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Soy un apasionado del desarrollo web con experiencia en frontend y backend donde también hago reparaciones y mantenimiento de Software, tengo conocimientos en las ramas de seguridad cibernética , excel , inglés, etc.</p>
+    </section>
+
+    <section id="proyectos" class="section proyectos">
+        <h2>Proyectos</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Proyecto TECH SOLUTION ON CALL</h3>
+                <p>Una página WEB sencilla e interactiva donde el usuario puede agendar su cita para hacerle reparaciones a domicilio de dispositivos electrónicos. Donde el cliente puede consultar el proceso o constancia del dispositivo, incluyendo si está listo y la información correspondiente del ID de la cita asignada.</p>
+                <p>Este proyecto incluye una base de datos la cual se almacena toda la información correspondiente.</p>
+                
+                <!-- Botón para abrir la galería de proyectos -->
+                <button class="open-gallery-btn" onclick="openProjectGallery()">Ver imagenes del proyecto</button>
+                
+                <!-- Galería de imágenes (pero inicialmente oculta) -->
+                <div class="project-gallery">
+                    <div class="gallery-images">
+                        <img src="Imagenes del proyecto/1.png" alt="Imagen 1">
+                        <img src="Imagenes del proyecto/2.png" alt="Imagen 2">
+                        <img src="Imagenes del proyecto/3.png" alt="Imagen 3">
+                        <img src="Imagenes del proyecto/4.png" alt="Imagen 4">
+                        <img src="Imagenes del proyecto/5.png" alt="Imagen 5">
+                        <img src="Imagenes del proyecto/6.png" alt="Imagen 6">
+                        <img src="Imagenes del proyecto/7.png" alt="Imagen 7">
+                        <img src="Imagenes del proyecto/8.png" alt="Imagen 8">
+                        <img src="Imagenes del proyecto/9.png" alt="Imagen 9">
+                        <img src="Imagenes del proyecto/10.png" alt="Imagen 10">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="certificados" class="section certificados">
+        <h2>Certificados</h2>
+        <div class="certificates-container">
+            <div class="certificate-card">
+                <h3>Certificado en Diferentes Áreas</h3>
+                
+                <!-- Botón para abrir la galería de certificados -->
+                <button class="open-gallery-btn" onclick="openGallery()">Ver Todos los Certificados</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal para la galería de certificados -->
+    <div id="gallery-modal" class="modal">
+        <span class="close" onclick="closeGallery()">&times;</span>
+        <div class="modal-content">
+            <div class="certificate-gallery">
+                <img src="Imagenes de certificados/1.png" alt="Certificado 1">
+                <img src="Imagenes de certificados/2.png" alt="Certificado 2">
+                <img src="Imagenes de certificados/3.png" alt="Certificado 3">
+                <img src="Imagenes de certificados/4.png" alt="Certificado 4">
+                <img src="Imagenes de certificados/5.png" alt="Certificado 5">
+                <img src="Imagenes de certificados/6.png" alt="Certificado 6">
+                <img src="Imagenes de certificados/7.png" alt="Certificado 7">
+                <img src="Imagenes de certificados/8.png" alt="Certificado 8">
+                <img src="Imagenes de certificados/9.png" alt="Certificado 9">
+                <img src="Imagenes de certificados/10.png" alt="Certificado 10">
+                <img src="Imagenes de certificados/11.png" alt="Certificado 11">
+                <img src="Imagenes de certificados/12.png" alt="Certificado 12">
+                <img src="Imagenes de certificados/13.png" alt="Certificado 13">
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="contact-info">
+            <p><strong>Contacto:</strong></p>
+            <p>Email: <a href="mailto:santiagobracamonte0733@gmail.com">santiagobracamonte0733@gmail.com</a></p>
+        </div>
+        
+        <div class="social-media">
+            <p><strong>Sígueme en:</strong></p>
+            <a href="https://www.facebook.com/profile.php?id=100092255674611&mibextid=ZbWKwL" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/qr/UYEK4HVW5WMPH1" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/braca_2107/profilecard/?igsh=MTBldGhjdjl0cDAyag==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <p class="footer-note">© 2024 Portafolio. Todos los derechos reservados.</p>
+</footer>
+
+    <!-- Modal -->
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+    <script src="scripts.js"></script>
+</body>
+</html>
